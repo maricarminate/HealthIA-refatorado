@@ -1,0 +1,91 @@
+# ===============================================
+# GITIGNORE - Arquivos que NÃO vão pro Git
+# ===============================================
+# 
+# EXPLICAÇÃO:
+# O Git rastreia mudanças em arquivos, mas NEM TUDO deve ser commitado:
+# - Arquivos temporários (cache, logs)
+# - Arquivos sensíveis (.env com senhas)
+# - Arquivos gerados automaticamente
+# - Dependências (node_modules, venv)
+# 
+# Este arquivo diz ao Git: "ignore esses arquivos/pastas"
+# ===============================================
+
+# ---- Python ----
+# Cache do Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Ambientes virtuais
+venv/
+env/
+ENV/
+.venv
+
+# PyCharm
+.idea/
+
+# VS Code
+.vscode/
+
+# Jupyter Notebooks
+.ipynb_checkpoints
+
+# ---- Arquivos de Configuração Sensíveis ----
+# IMPORTANTE: .env contém configurações/senhas
+# NUNCA commite .env no Git!
+.env
+.env.local
+.env.*.local
+
+# ---- Arquivos do Sistema Operacional ----
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# ---- Logs ----
+*.log
+logs/
+
+# ---- Testes ----
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ---- Build/Dist ----
+build/
+dist/
+*.egg-info/
+
+# ---- Dados Temporários ----
+temp/
+tmp/
+*.tmp
+
+# ===============================================
+# O QUE COMMITAR (exemplos):
+# ===============================================
+# ✅ Código fonte (.py)
+# ✅ requirements.txt
+# ✅ .env.example (template)
+# ✅ README.md
+# ✅ Arquivos do modelo (se não forem muito grandes)
+# ✅ .gitignore (este arquivo!)
+# 
+# ❌ .env (configurações reais)
+# ❌ __pycache__
+# ❌ venv/
+# ❌ .DS_Store
+# ===============================================

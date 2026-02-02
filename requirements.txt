@@ -1,0 +1,72 @@
+# ===============================================
+# HEALTHIA BACKEND - DEPENDÊNCIAS
+# ===============================================
+# 
+# EXPLICAÇÃO:
+# Este arquivo lista TODAS as bibliotecas Python que o projeto precisa.
+# Quando alguém quiser rodar seu projeto, basta executar:
+# pip install -r requirements.txt
+# 
+# E todas as dependências serão instaladas automaticamente!
+
+# ---- Framework Web ----
+# FastAPI: Framework web moderno, rápido e fácil de usar
+# Inclui validação automática, documentação automática, etc.
+fastapi==0.109.0
+
+# Uvicorn: Servidor ASGI para rodar FastAPI
+# ASGI = padrão Python para servidores web assíncronos
+uvicorn[standard]==0.27.0
+
+# Pydantic: Validação de dados automática
+# Já vem com FastAPI, mas especificamos versão para garantir
+pydantic==2.5.3
+pydantic-settings==2.1.0
+
+# ---- Machine Learning ----
+# XGBoost: Algoritmo de ML que você usa no modelo
+xgboost==2.0.3
+
+# Scikit-learn: Biblioteca de ML (TF-IDF, métricas, etc)
+scikit-learn==1.4.0
+
+# Joblib: Para salvar/carregar modelos .pkl
+joblib==1.3.2
+
+# NumPy: Computação numérica (arrays, matrizes)
+numpy==1.26.3
+
+# Pandas: Manipulação de dados (DataFrames)
+pandas==2.1.4
+
+# ---- Utilitários ----
+# Python-multipart: Para receber form data (se precisar no futuro)
+python-multipart==0.0.6
+
+# Python-dotenv: Para carregar variáveis de ambiente de arquivo .env
+python-dotenv==1.0.0
+
+# ---- Desenvolvimento (opcional mas recomendado) ----
+# Pytest: Para testes automatizados
+pytest==7.4.4
+pytest-asyncio==0.23.3
+
+# HTTPx: Cliente HTTP para testar a API
+httpx==0.26.0
+
+# Black: Formatador de código automático
+black==24.1.1
+
+# Flake8: Linter (verifica qualidade do código)
+flake8==7.0.0
+
+# ===============================================
+# VERSÕES FIXADAS
+# ===============================================
+# EXPLICAÇÃO:
+# Fixamos versões específicas (==) para garantir que o projeto
+# funcione da mesma forma em qualquer máquina.
+# 
+# Se usássemos >= (maior ou igual), poderiam instalar versões
+# mais novas que podem ter mudanças incompatíveis.
+# ===============================================
