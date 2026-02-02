@@ -255,4 +255,4 @@ Este projeto é de código aberto para fins educacionais.
 
 ---
 
-Desenvolvido por [Seu Nome] | 2025
+Desenvolvido por Mariana Santos Carminate | 2025
